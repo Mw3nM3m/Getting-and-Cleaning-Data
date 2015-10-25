@@ -1,0 +1,122 @@
+DATA DICTIONARY – Getting Tidy Data from : Human Activity Recognition Using Smartphones Data Set
+
+ Group.1 				Text
+		
+	The name of the activity being measured
+
+WALKIN
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+
+ Group.2 				2
+	
+	The subject ID doing the activity measured
+
+1 .. 30
+		
+The rest of the columns are the following : 
+
+tBodyAcc-mean()-X              	Number.Decimals
+tBodyAcc-mean()-Y              	Number.Decimals
+tBodyAcc-mean()-Z              	Number.Decimals
+tGravityAcc-mean()-X           	Number.Decimals
+tGravityAcc-mean()-Y           	Number.Decimals
+tGravityAcc-mean()-Z           	Number.Decimals
+tBodyAccJerk-mean()-X          	Number.Decimals
+tBodyAccJerk-mean()-Y          	Number.Decimals
+tBodyAccJerk-mean()-Z          	Number.Decimals
+tBodyGyro-mean()-X             	Number.Decimals
+tBodyGyro-mean()-Y             	Number.Decimals
+tBodyGyro-mean()-Z             	Number.Decimals
+tBodyGyroJerk-mean()-X         	Number.Decimals
+tBodyGyroJerk-mean()-Y         	Number.Decimals
+tBodyGyroJerk-mean()-Z         	Number.Decimals
+tBodyAccMag-mean()             	Number.Decimals
+tGravityAccMag-mean()          	Number.Decimals
+tBodyAccJerkMag-mean()         	Number.Decimals
+tBodyGyroMag-mean()            	Number.Decimals
+tBodyGyroJerkMag-mean()         Number.Decimals
+fBodyAcc-mean()-X              	Number.Decimals
+fBodyAcc-mean()-Y              	Number.Decimals
+fBodyAcc-mean()-Z              	Number.Decimals
+fBodyAcc-meanFreq()-X          	Number.Decimals
+fBodyAcc-meanFreq()-Y          	Number.Decimals
+fBodyAcc-meanFreq()-Z          	Number.Decimals
+fBodyAccJerk-mean()-X          	Number.Decimals
+fBodyAccJerk-mean()-Y          	Number.Decimals
+fBodyAccJerk-mean()-Z          	Number.Decimals
+fBodyAccJerk-meanFreq()-X       Number.Decimals
+fBodyAccJerk-meanFreq()-Y       Number.Decimals
+fBodyAccJerk-meanFreq()-Z       Number.Decimals
+fBodyGyro-mean()-X             	Number.Decimals
+fBodyGyro-mean()-Y             	Number.Decimals
+fBodyGyro-mean()-Z             	Number.Decimals
+fBodyGyro-meanFreq()-X         	Number.Decimals
+fBodyGyro-meanFreq()-Y         	Number.Decimals
+fBodyGyro-meanFreq()-Z         	Number.Decimals
+fBodyAccMag-mean()             	Number.Decimals
+fBodyAccMag-meanFreq()          Number.Decimals
+fBodyBodyAccJerkMag-mean()      Number.Decimals
+fBodyBodyAccJerkMag-meanFreq() 	Number.Decimals
+fBodyBodyGyroMag-mean()      	Number.Decimals
+fBodyBodyGyroMag-meanFreq()    	Number.Decimals
+fBodyBodyGyroJerkMag-mean()	    Number.Decimals
+fBodyBodyGyroJerkMag-meanFreq() Number.Decimals
+tBodyAcc-std()-X               	Number.Decimals
+tBodyAcc-std()-Y               	Number.Decimals
+tBodyAcc-std()-Z               	Number.Decimals
+tGravityAcc-std()-X            	Number.Decimals
+tGravityAcc-std()-Y            	Number.Decimals
+tGravityAcc-std()-Z            	Number.Decimals
+tBodyAccJerk-std()-X           	Number.Decimals
+tBodyAccJerk-std()-Y           	Number.Decimals
+tBodyAccJerk-std()-Z           	Number.Decimals
+tBodyGyro-std()-X              	Number.Decimals
+tBodyGyro-std()-Y				Number.Decimals
+tBodyGyro-std()-Z              	Number.Decimals
+tBodyGyroJerk-std()-X          	Number.Decimals
+tBodyGyroJerk-std()-Y          	Number.Decimals
+tBodyGyroJerk-std()-Z          	Number.Decimals
+tBodyAccMag-std()              	Number.Decimals
+tGravityAccMag-std()           	Number.Decimals
+tBodyAccJerkMag-std()          	Number.Decimals
+tBodyGyroMag-std()             	Number.Decimals
+tBodyGyroJerkMag-std()         	Number.Decimals
+fBodyAcc-std()-X               	Number.Decimals
+fBodyAcc-std()-Y               	Number.Decimals
+fBodyAcc-std()-Z               	Number.Decimals
+fBodyAccJerk-std()-X           	Number.Decimals
+fBodyAccJerk-std()-Y           	Number.Decimals
+fBodyAccJerk-std()-Z           	Number.Decimals
+fBodyGyro-std()-X              	Number.Decimals
+fBodyGyro-std()-Y              	Number.Decimals
+fBodyGyro-std()-Z              	Number.Decimals
+fBodyAccMag-std()              	Number.Decimals
+fBodyBodyAccJerkMag-std()       Number.Decimals
+fBodyBodyGyroMag-std()         	Number.Decimals
+fBodyBodyGyroJerkMag-std()		Number.Decimals
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+measure-mean(): Measure Mean value
+measure-std() : Measure Standard deviation value
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
